@@ -18,14 +18,13 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(RoleSeeder::class);
-        $this->call(ProdukDagangSeeder::class);
-
-        foreach (Role::where('name', 'Pembeli')->get() as $role) {
-            $pembeli = User::factory(50)->create();
-            foreach ($pembeli as $user) {
-                $user->assignRole('Pembeli');
-            }
-        }
+        $this->call(UserSeeder::class);
+//        foreach (Role::where('name', 'Pembeli')->get() as $role) {
+//            $pembeli = $this->call(UserSeeder::class);
+//            foreach ($pembeli as $user) {
+//                $user->assignRole('Pembeli');
+//            }
+//        }
 
         foreach (Role::where('name', 'Pedagang Kaki Lima')->get() as $role) {
             $penjual = User::factory(50)->create();
@@ -33,5 +32,7 @@ class DatabaseSeeder extends Seeder
                 $user->assignRole('Pedagang Kaki Lima');
             }
         }
+
+        $this->call(ProdukDagangSeeder::class);
     }
 }

@@ -17,6 +17,7 @@ class UserFactory extends Factory
      */
     public function definition()
     {
+//        Akun Pedagang
         return [
             'nama' => fake()->name(),
             'nama_dagang' => fake()->name() . " Store",

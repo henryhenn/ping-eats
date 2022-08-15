@@ -14,36 +14,64 @@ class ProdukDagangSeeder extends Seeder
      */
     public function run()
     {
-        ProdukDagang::create([
-            'nama' => 'Nasi Goreng',
-            'harga' => 20000,
-            'deskripsi' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quibusdam ipsum exercitationem perferendis alias asperiores maxime excepturi nam dolorum?',
-            'url_foto' => 'https://source.unsplash.com/random/400x200',
-            'user_id' => fake()->numberBetween(1, 50)
-        ]);
+        for ($i = 1; $i <= 20; $i++) {
+            ProdukDagang::create([
+                'nama' => 'Nasi Goreng',
+                'harga' => fake()->randomNumber(5, true),
+                'deskripsi' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quibusdam ipsum exercitationem perferendis alias asperiores maxime excepturi nam dolorum?',
+                'url_foto' => 'https://source.unsplash.com/random/400x200',
+                'user_id' => fake()->numberBetween(51, 100)
+            ]);
+        }
 
-        ProdukDagang::create([
-            'nama' => 'Es Teh Manis',
-            'harga' => 12000,
-            'deskripsi' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quibusdam ipsum exercitationem perferendis alias asperiores maxime excepturi nam dolorum?',
-            'url_foto' => 'https://source.unsplash.com/random/400x200',
-            'user_id' => fake()->numberBetween(1, 50)
-        ]);
+        for ($i = 1; $i <= 20; $i++) {
+            ProdukDagang::create([
+                'nama' => 'Es Teh Manis',
+                'harga' => fake()->randomNumber(5, true),
+                'deskripsi' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quibusdam ipsum exercitationem perferendis alias asperiores maxime excepturi nam dolorum?',
+                'url_foto' => 'https://source.unsplash.com/random/400x200',
+                'user_id' => fake()->numberBetween(51, 100)
+            ]);
+        }
 
-        ProdukDagang::create([
-            'nama' => 'Nasi Bakar',
-            'harga' => 23000,
-            'deskripsi' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quibusdam ipsum exercitationem perferendis alias asperiores maxime excepturi nam dolorum?',
-            'url_foto' => 'https://source.unsplash.com/random/400x200',
-            'user_id' => fake()->numberBetween(1, 50)
-        ]);
+        for ($i = 1; $i <= 20; $i++) {
+            ProdukDagang::create([
+                'nama' => 'Nasi Bakar',
+                'harga' => fake()->randomNumber(5, true),
+                'deskripsi' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quibusdam ipsum exercitationem perferendis alias asperiores maxime excepturi nam dolorum?',
+                'url_foto' => 'https://source.unsplash.com/random/400x200',
+                'user_id' => fake()->numberBetween(51, 100)
+            ]);
+        }
 
-        ProdukDagang::create([
-            'nama' => 'Sate Ayam',
-            'harga' => 2000,
-            'deskripsi' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quibusdam ipsum exercitationem perferendis alias asperiores maxime excepturi nam dolorum?',
-            'url_foto' => 'https://source.unsplash.com/random/400x200',
-            'user_id' => fake()->numberBetween(1, 50)
-        ]);
+        for ($i = 1; $i <= 20; $i++) {
+            ProdukDagang::create([
+                'nama' => 'Sate Ayam',
+                'harga' => fake()->randomNumber(5, true),
+                'deskripsi' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quibusdam ipsum exercitationem perferendis alias asperiores maxime excepturi nam dolorum?',
+                'url_foto' => 'https://source.unsplash.com/random/400x200',
+                'user_id' => fake()->numberBetween(51, 100)
+            ]);
+        }
+
+        for ($i = 1; $i <= 20; $i++) {
+            ProdukDagang::create([
+                'nama' => 'Sate Kambing',
+                'harga' => fake()->randomNumber(5, true),
+                'deskripsi' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quibusdam ipsum exercitationem perferendis alias asperiores maxime excepturi nam dolorum?',
+                'url_foto' => 'https://source.unsplash.com/random/400x200',
+                'user_id' => fake()->numberBetween(51, 100)
+            ]);
+        }
+
+        for ($i = 1; $i <= 20; $i++) {
+            ProdukDagang::create([
+                'nama' => 'Bakmie Ayam',
+                'harga' => fake()->randomNumber(5, true),
+                'deskripsi' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quibusdam ipsum exercitationem perferendis alias asperiores maxime excepturi nam dolorum?',
+                'url_foto' => 'https://source.unsplash.com/random/400x200',
+                'user_id' => fake()->numberBetween(1, 50)
+            ]);
+        }
     }
 }

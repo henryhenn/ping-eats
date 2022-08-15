@@ -19,7 +19,7 @@ return new class extends Migration
             $table->integer('harga');
             $table->string('deskripsi');
             $table->string('url_foto');
-            $table->foreignId('user_id');
+            $table->foreignId('user_id')->constrained('users');
             $table->timestamps();
         });
     }

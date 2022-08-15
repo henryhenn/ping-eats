@@ -14,7 +14,7 @@ class HomeController extends Controller
 {
     public function index(Request $request): View
     {
-        $products = ProdukDagang::with('user')->search(request('search'))->latest()->get();
+    $products = ProdukDagang::with('user')->search(request('search'))->latest()->paginate(20)->withQueryString();
 
         return view('home.index', compact('products'));
     }

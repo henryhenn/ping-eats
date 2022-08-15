@@ -79,7 +79,8 @@
                                                       d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                             </svg>
                                             <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Apakah
-                                                Anda Yakin Ingin PING Pedagang <span class="font-semibold">{{ $product->user->nama_dagang }}</span>?</h3>
+                                                Anda Yakin Ingin PING Pedagang <span
+                                                    class="font-semibold">{{ $product->user->nama_dagang }}</span>?</h3>
                                             <div class="flex justify-center flex-wrap">
                                                 <form action="{{ route('ping', $product->id) }}" method="post">
                                                     @csrf
@@ -105,6 +106,9 @@
                     </div>
                 </div>
             @endforeach
+        </div>
+        <div class="mt-20">
+            {{ $products->links() }}
         </div>
     @else
         <h2 class="text-secondary mt-8 text-center text-4xl font-bold">Tidak ada produk terbaru</h2>
