@@ -19,7 +19,7 @@ class ProdukDagangSeeder extends Seeder
             'harga' => 20000,
             'deskripsi' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quibusdam ipsum exercitationem perferendis alias asperiores maxime excepturi nam dolorum?',
             'url_foto' => 'https://source.unsplash.com/random/400x200',
-            'user_id' => 1
+            'user_id' => fake()->numberBetween(1, 50)
         ]);
 
         ProdukDagang::create([
@@ -27,7 +27,7 @@ class ProdukDagangSeeder extends Seeder
             'harga' => 12000,
             'deskripsi' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quibusdam ipsum exercitationem perferendis alias asperiores maxime excepturi nam dolorum?',
             'url_foto' => 'https://source.unsplash.com/random/400x200',
-            'user_id' => 2
+            'user_id' => fake()->numberBetween(1, 50)
         ]);
 
         ProdukDagang::create([
@@ -35,7 +35,7 @@ class ProdukDagangSeeder extends Seeder
             'harga' => 23000,
             'deskripsi' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quibusdam ipsum exercitationem perferendis alias asperiores maxime excepturi nam dolorum?',
             'url_foto' => 'https://source.unsplash.com/random/400x200',
-            'user_id' => 1
+            'user_id' => fake()->numberBetween(1, 50)
         ]);
 
         ProdukDagang::create([
@@ -43,7 +43,7 @@ class ProdukDagangSeeder extends Seeder
             'harga' => 2000,
             'deskripsi' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quibusdam ipsum exercitationem perferendis alias asperiores maxime excepturi nam dolorum?',
             'url_foto' => 'https://source.unsplash.com/random/400x200',
-            'user_id' => 2
+            'user_id' => fake()->numberBetween(1, 50)
         ]);
     }
 }

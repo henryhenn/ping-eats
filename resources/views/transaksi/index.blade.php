@@ -64,7 +64,7 @@
                 </tr>
             @empty
                 <tr>
-                    <th colspan="5" scope="row" class="text-secondary whitespace-nowrap py-4 px-6 font-medium">
+                    <th colspan="6" scope="row" class="text-secondary whitespace-nowrap py-4 px-6 font-medium">
                         <h2 class="text-center text-2xl font-bold">Tidak ada transaksi terbaru</h2>
                     </th>
                 </tr>

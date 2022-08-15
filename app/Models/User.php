@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -19,6 +18,7 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+//    protected $guard_name = 'web';
     protected $fillable = [
         'nama',
         'nama_dagang',
