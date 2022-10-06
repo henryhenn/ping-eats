@@ -1,8 +1,7 @@
 @extends('layouts.main')
 
-
 @section('midtrans')
-    <script type="text/javascript" src="https://app.sandbox.midtrans.com/snap/snap.js"
+    <script type="text/javascript" src="https://app.midtrans.com/snap/snap.js"
             data-client-key="SB-Mid-client-6k71sSzSTo0Zd0MH"></script>
 @endsection
 
